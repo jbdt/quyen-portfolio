@@ -107,7 +107,7 @@
      
                             <div class="row">  
                                 <div class="col-sm-12 col-md-6 contact_left">        
-                                    <form target="_blank" class="form-horizontal" method="post" action="https://formsubmit.co/javierblancodetorres@gmail.com">
+                                    <form target="_blank" class="form-horizontal" method="post" action="https://formsubmit.co/2af212f087a9b4957144a18dfdff5fca">
           
                                         <div class="form-group">                                    
                                             <input type="text" class="form-control" id="name" name="name" placeholder="NAME..." value="">                                    
@@ -126,7 +126,7 @@
                                         </div>
                                             
                                         <div class="form-group">
-                                            <input id="submit" name="submit" type="submit" value="Send" class="btn view_more btn-submit">
+                                            <input id="submit" type="submit" value="Send" class="btn view_more btn-submit">
                                         </div>            
                                     
                                     </form>    
@@ -147,8 +147,8 @@
                                     </div>
                                     
                                     <div class="col-md-12 contact_info">
-                                        <a href="mailto:info@company.com" class="contact-info-link">
-                                            <i class="fa fa-envelope contact-fa"></i>info@company.com
+                                        <a href="mailto:quyenbui15317@gmail.com" class="contact-info-link">
+                                            <i class="fa fa-envelope contact-fa"></i>quyenbui15317@gmail.com
                                         </a><br/>
                                         <a href="+1234567890" class="contact-info-link">
                                             <i class="fa fa-mobile contact-fa"></i>(+123) 456 7890
@@ -169,12 +169,6 @@
                             </div> <!-- .row -->
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="google-map"></div>
-                            </div>                            
-                        </div>
-
                     </div> <!-- .contact-content -->
                 </div> <!-- .main-page -->
             </div> <!-- .row -->
@@ -190,45 +184,5 @@
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        /* Google map
-        ------------------------------------------------*/
-        var map = '';
-        var center;
-
-        function initialize() {
-            var mapOptions = {
-                                zoom: 16,
-                                center: new google.maps.LatLng(13.758468,100.567481),
-                                scrollwheel: false
-                            };  
-        
-            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-            google.maps.event.addDomListener(map, 'idle', function() {
-                calculateCenter();
-            });
-        
-            google.maps.event.addDomListener(window, 'resize', function() {
-                map.setCenter(center);
-            });
-        } // initialize
-
-        function calculateCenter() {
-            center = map.getCenter();
-        }
-
-        function loadGoogleMap(){
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-            document.body.appendChild(script);
-        }
-      
-        // DOM is ready.
-        $(document).ready(function(){
-            loadGoogleMap();
-        });
-    </script>
 </body>
 </html>
