@@ -1,3 +1,7 @@
+a, button, div, img, li, h1, h2, h3, h4, p, span {
+	user-select: none;
+}
+
 a:hover, a:focus { text-decoration: none; }
 a:hover {
 	-webkit-transition: all 0.3s ease;
@@ -447,6 +451,7 @@ body {
 	margin-bottom: 0;
 	text-align: right;
 	padding: 30px 0;
+	user-select: none;
 }
 
 .copyright a {
@@ -655,14 +660,20 @@ body {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.rss_icon {	background-color: #ff9934;}
-.rss_icon:hover, .rss_icon:focus { background-color: #E6801C; }
-
-.twitter_icon {	background-color:#1abfdf; }
-.twitter_icon:hover, .twitter_icon:focus { background-color: #0C98B3; }
+.linkedin_icon {	background-color:#2965b6; }
+.linkedin_icon:hover, .linkedin_icon:focus { background-color: #205192; }
 
 .facebook_icon { background-color:#527ebf; }
 .facebook_icon:hover, .facebook_icon:focus { background-color: #2B538D; }
+
+.messenger_icon {	background-color:#3586f6; }
+.messenger_icon:hover, .messenger_icon:focus { background-color: #2d70cf; }
+
+.zalo_icon { background-color:#246aed; }
+.zalo_icon:hover, .zalo_icon:focus { background-color: rgb(32, 62, 107); }
+
+.instagram_icon {	background-color:#dc3274; }
+.instagram_icon:hover, .instagram_icon:focus { background-color: #b7295f; }
 
 .form-group { margin-bottom: 25px; }
 .form-control {
