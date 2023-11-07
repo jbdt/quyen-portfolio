@@ -131,29 +131,35 @@
                         </div> <!-- .banner-main-about -->
 
                         <!-- Modals -->
-                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div id="modal1" class="modal fade">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        <img src="images/about-img-2.jpg" alt="Image" class="img-responsive">
-                                    </div> <!-- .modal-body -->
-                                </div> <!-- .modal-content -->
-                            </div> <!-- .modal-dialog -->
-                        </div> <!-- #myModal -->
-                        <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <img src="images/about-img-3.jpg" alt="Image" class="img-responsive">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe id="video1" class="embed-responsive-item" width="1024" height="576" src="https://www.youtube.com/embed/tC-rRhQcnlI?si=eLBjRVY8JonS8JqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div id="modal2" class="modal fade">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        <img src="images/about-img-4.jpg" alt="Image" class="img-responsive">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe id="video2" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3MMMe1drnZY?si=jXtHwdUhbPnOR0wZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal3" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe id="video3" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=Ziy6cOFyaviE6m_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -167,9 +173,9 @@
                                     <div class="box about_box_line card">
                                         <div class="box-icon">
                                             <img src="images/about-img-2.jpg" alt="Image" class="img-responsive">
-                                            <div class="inner_search">
-                                                <div class="search_icon text-center Absolute-Center" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></div>
-                                            </div> <!-- .inner_search -->
+                                            <div class="inner_play">
+                                                <div class="play_icon text-center Absolute-Center" data-toggle="modal" data-target="#modal1"><i class="fa fa-play"></i></div>
+                                            </div> <!-- .inner_play -->
                                         </div> <!-- .box-icon -->
                                         <div class="info">
                                             <div class="about_box_title">
@@ -184,8 +190,8 @@
                                     <div class="box about_box_line card">
                                         <div class="box-icon">
                                             <img src="images/about-img-3.jpg" alt="Image" class="img-responsive">
-                                            <div class="inner_search">
-                                                <div class="search_icon text-center Absolute-Center" data-toggle="modal" data-target="#myModal2"><i class="fa fa-search"></i></div>
+                                            <div class="inner_play">
+                                                <div class="play_icon text-center Absolute-Center" data-toggle="modal" data-target="#modal2"><i class="fa fa-play"></i></div>
                                             </div>
                                         </div>
                                         <div class="info">
@@ -201,9 +207,9 @@
                                     <div class="box about_box_line card">
                                         <div class="box-icon">
                                             <img src="images/about-img-4.jpg" alt="Image" class="img-responsive">
-                                            <div class="inner_search">
-                                                <div class="search_icon text-center Absolute-Center" data-toggle="modal" data-target="#myModal3"><i class="fa fa-search"></i></div>
-                                            </div> <!-- .inner_search -->
+                                            <div class="inner_play">
+                                                <div class="play_icon text-center Absolute-Center" data-toggle="modal" data-target="#modal3"><i class="fa fa-play"></i></div>
+                                            </div> <!-- .inner_play -->
                                         </div> <!-- .box-icon -->
                                         <div class="info">
                                             <div class="about_box_title">
@@ -275,6 +281,7 @@
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modal-video.js"></script>
 
 </body>
 </html>
