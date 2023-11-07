@@ -779,6 +779,9 @@ textarea.form-control {	height:135px; }
 
 @media screen and (min-width: 992px) {
 	#content .box { width: 33%; box-shadow: none;}
+
+	.media-small {display: none}
+	.media-big {display: initial}
 }
 
 @media (min-width: 1230px) {
@@ -786,6 +789,8 @@ textarea.form-control {	height:135px; }
 }
 
 @media (max-width:991px) {
+	.media-small {display: initial}
+	.media-big {display: none}
 
 	.main-body { background-size: auto; }
 
