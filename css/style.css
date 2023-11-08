@@ -59,7 +59,7 @@ body {
 	top: 0;
 	left: 0;
 }
-.gallery-page .main-navigation,
+.portfolio-page .main-navigation,
 .contact-page .main-navigation {
 	position: static;
 	float: left;
@@ -170,8 +170,8 @@ body {
 	text-align: center;
 	margin-bottom: 10px;
 }
-.gallery {
-	background-image: url(../images/menu-bg-gallery.png);
+.portfolio {
+	background-image: url(../images/menu-bg-portfolio.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -477,9 +477,14 @@ body {
 	text-transform: uppercase;
 }
 .about_box_title h4 {
+	font-size: 16px;
+	margin: 3px 7px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.about_box_title h5 {
 	font-size: 14px;
 	margin: 3px 7px 0;
-	text-transform: uppercase;
 }
 .about_box_text {
 	color: #535353;
@@ -578,31 +583,31 @@ body {
 	text-transform: uppercase;
 }
 
-.gallery_main,
+.portfolio_main,
 .contact-content {
 	background-color: #fff;
 	border-top: 5px solid #19beb6;	
 	width: auto;
 	overflow: hidden;
 }
-.gallery_main {	padding: 30px 20px 30px 30px; }
+.portfolio_main {	padding: 30px 20px 30px 30px; }
 
 .contact-content { padding: 30px; }
 .contact-content { padding: 0; }
 .contact-content-upper { padding: 30px 40px; }
 
-.gallery_title {
+.portfolio_title {
 	width: auto;
 	border-left: 4px solid #19beb6;
 	padding-left: 20px;
 	margin-bottom: 40px;
 }
-.gallery_title h3 {
+.portfolio_title h3 {
 	font-size: 70px;
 	font-weight: bold;
 	margin-bottom: 0;
 }
-.gallery_title h4 {
+.portfolio_title h4 {
 	font-size: 25px;
 	font-weight: bold;
 	color: #19beb6;
@@ -610,13 +615,28 @@ body {
 	text-transform: uppercase;
 }
 
-.view_more_main {
+.view_more_main, .view_portfolio_main {
 	width: 100%;
 	margin: 15px 0px;
 }
 
 .view_more {
 	background-color:#19beb6;
+	color:#fff;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-radius:0px;
+	padding:8px 25px;
+}
+
+.view_portfolio:hover, .view_portfolio:focus { 
+	background-color: #0d84a5; 
+	color:#fff;
+}
+
+.view_portfolio {
+	background-color:#10a5cd;
 	color:#fff;
 	font-size:14px;
 	text-transform:uppercase;
@@ -735,7 +755,7 @@ textarea.form-control {	height:135px; }
 	width: 1600px; 
 } 
  
-/*****masonry gallery****/
+/*****masonry portfolio****/
 #content {
 	float: left;
 	width: 100%;
@@ -805,7 +825,7 @@ textarea.form-control {	height:135px; }
 	.block-keep-ratio-md-2-1:after { padding-top: 50%; }
 
 	.contact-page .main-navigation,
-	.gallery-page .main-navigation,
+	.portfolio-page .main-navigation,
 	.main-navigation {
 		float: none;
 		position: static;
@@ -817,7 +837,7 @@ textarea.form-control {	height:135px; }
 	}
 
 	.content-main { padding-left: 0; }
-	.content-main.gallery_main { padding: 30px; }
+	.content-main.portfolio_main { padding: 30px; }
 
 	.banner-main-home img {
 		display: block;		
@@ -913,11 +933,11 @@ textarea.form-control {	height:135px; }
 		width: 100%;
 	}
 
-	.gallery_main,
+	.portfolio_main,
 	.contact-content { padding: 15px; }
 	
-	.gallery_title h3 {	font-size: 50px; }
-	.gallery_title h4 {	font-size: 20px; }
+	.portfolio_title h3 {	font-size: 50px; }
+	.portfolio_title h4 {	font-size: 20px; }
 	
 	.banner-main-home-text,
 	.banner-main-home img {
@@ -964,6 +984,6 @@ textarea.form-control {	height:135px; }
 
 	.main-menu-link-icon {	font-size: 3em;	}
 
-	.gallery_title h3 { font-size: 40px; }
-	.gallery_title h4 { font-size: 18px; }
+	.portfolio_title h3 { font-size: 40px; }
+	.portfolio_title h4 { font-size: 18px; }
 }
